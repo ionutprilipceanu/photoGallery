@@ -261,7 +261,7 @@ window.addEventListener('DOMContentLoaded', displayMenuItems(reviews));
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function(item){
     return `<article class="menu-item">
-              <img src= ${item.img} class="photo"  alt="">
+              <img src= ${item.img} class="photo" data-lightbox="poze" alt="">
             </article>`;
   });
   displayMenu = displayMenu.join('');
